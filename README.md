@@ -17,7 +17,7 @@ and some with `target` = 0 are
 * "Crying out for more! Set me ablaze".
 
 # approach and results:
-My approach was to tune a BERT model to do this. Huggingface has a wonderful tutorial available at https://huggingface.co/docs/transformers/tasks/sequence_classification, which I mostly followed. 
+My approach was to tune a BERT model to do the classification. Huggingface has a wonderful tutorial available at https://huggingface.co/docs/transformers/tasks/sequence_classification, which I adapted to this context.
 
 I chose to use the 'bert-base-cased' model because it seemed possible that capital letters might make a difference in some contexts (e.g. 'that was FIRE' vs 'that was fire'). Since location and keyword data also seemed significant based on some exploratory analysis, I merged everything into a string containing the location and keyword data before the text of the tweet, which was then tokenized, etc. 
 
