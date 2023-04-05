@@ -21,6 +21,6 @@ My approach was to tune a BERT model to do this. Huggingface has a wonderful tut
 
 I chose to use the 'bert-base-cased' model because it seemed possible that capital letters might make a difference in some contexts (e.g. 'that was FIRE' vs 'that was fire'). Since location and keyword data also seemed significant based on some exploratory analysis, I merged everything into a string containing the location and keyword data before the text of the tweet, which was then tokenized, etc. 
 
-To make the kaggle training data play well with the tensorflow dataset construction methods took some slight adjustments, but after this was done the model did reasonably well on the task with very little tuning (training for 3 epochs resulted in successful classification of 80.845% of the test set). 
+To make the kaggle training data play well with the tensorflow dataset construction methods took some slight adjustments, but after this was done the model did reasonably well on the task with very little tuning. Training for 3 epochs resulted in successful classification of 80.845% of the test set. 
 
 It would be worthwhile to experiment with using different models and leaving out keyword data since, in some cases keywords were deceptive. 
