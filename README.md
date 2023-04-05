@@ -1,5 +1,5 @@
 # tuning-bert
-This repository contains files to produce an entry to the introductory NLP kaggle competition. The competition, including train and test data, can be found at https://www.kaggle.com/competitions/nlp-getting-started. 
+This repository contains files to produce an entry to the introductory NLP kaggle competition. The details of the competition, including data, can be found at https://www.kaggle.com/competitions/nlp-getting-started, but to briefly summarize, the goal of the competition is to determine whether a given tweet in some collection is about a (real) disaster, or not. 
 
 # data:
 The training data is a csv file with lines corresponding to each tweet, with the entries: `id`, `keyword`, `location`, `text`, and `target`. The `target` entry is 0 or 1 depending on whether the tweet referred to a real disaster or not. The test data was essentially the same but omitted the `target` entry which was to be predicted.
